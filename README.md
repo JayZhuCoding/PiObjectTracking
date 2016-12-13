@@ -1,0 +1,4 @@
+# PiObjectTracking
+This program is running on Raspberry Pi and it is able to use the camera to track object. When the program starts running, the user would need to press the 'i' key under the video window to start selecting the region of interest. After doing this, the user would press any key to start tracking the target. When the user need to quit, just press the 'q' key and the process will be ended.
+
+It uses the OpenCV library and it is able to output digital signals to the Arduino board to control the robot motion. For example, when the target is too close to the robot, the minimal enclosing circle of the tracking rectangle would be very large and by calculating its value the program is able to determine whether or not output LOW digital signal. Also, when the target is far alway enough from the robot, the program will output a HIGH digital signal to the Arduino board.
